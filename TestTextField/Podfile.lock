@@ -1,0 +1,10 @@
+PODS:
+  - AKNumericFormatter (0.0.2)
+
+DEPENDENCIES:
+  - AKNumericFormatter (~> 0.0.2)
+
+SPEC CHECKSUMS:
+  AKNumericFormatter: de969ab13c504dca7aa119b558a934ccdbd1e376
+
+COCOAPODS: 0.39.0

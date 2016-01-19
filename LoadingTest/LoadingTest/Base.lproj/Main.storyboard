@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="JFV-23-X5l">
+                                <rect key="frame" x="180" y="45" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="GOw-hK-kTS"/>
+                                    <constraint firstAttribute="width" constant="240" id="feV-bW-c3l"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckB-tg-ZRG">
+                                <rect key="frame" x="360" y="206" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="107-Kk-dMh"/>
+                                    <constraint firstAttribute="height" constant="30" id="mSz-eR-Mue"/>
+                                </constraints>
+                                <state key="normal" title="结束动画"/>
+                                <connections>
+                                    <action selector="yyy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BxI-7I-M1x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tF0-cI-d7Y">
+                                <rect key="frame" x="180" y="206" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PmX-N4-GrU"/>
+                                    <constraint firstAttribute="width" constant="60" id="abo-iW-kXE"/>
+                                </constraints>
+                                <state key="normal" title="开始动画"/>
+                                <connections>
+                                    <action selector="xxxx:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oZ0-sh-e3I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ckB-tg-ZRG" firstAttribute="trailing" secondItem="JFV-23-X5l" secondAttribute="trailing" id="N55-kV-yMh"/>
+                            <constraint firstItem="JFV-23-X5l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="Siu-jl-8D8"/>
+                            <constraint firstItem="tF0-cI-d7Y" firstAttribute="top" secondItem="JFV-23-X5l" secondAttribute="bottom" constant="33" id="efa-75-KKd"/>
+                            <constraint firstItem="JFV-23-X5l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gM8-LR-pI8"/>
+                            <constraint firstItem="ckB-tg-ZRG" firstAttribute="top" secondItem="JFV-23-X5l" secondAttribute="bottom" constant="33" id="ndD-Jl-jdG"/>
+                            <constraint firstItem="tF0-cI-d7Y" firstAttribute="leading" secondItem="JFV-23-X5l" secondAttribute="leading" id="vac-sK-GsD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="evimage" destination="JFV-23-X5l" id="0f1-XY-aqv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.gif" width="145" height="106"/>
+    </resources>
+</document>
