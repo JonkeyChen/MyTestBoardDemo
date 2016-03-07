@@ -22,11 +22,12 @@
 - (void)drawTextInRect:(CGRect)rect{
     [super drawTextInRect:rect];
     
-    CGSize textSize = [[self text] sizeWithFont:[self font]];
+    CGSize textSize = [[self text] sizeWithAttributes:@{NSFontAttributeName:self.font}];
+    
     CGFloat strikeWidth = textSize.width;
     CGRect lineRect;
-    CGFloat origin_x;
-    CGFloat origin_y;
+    CGFloat origin_x = 0.0;
+    CGFloat origin_y = 0.0;
     
     
     if ([self textAlignment] == NSTextAlignmentRight) {

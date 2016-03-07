@@ -9,6 +9,7 @@
 #import "TestCell.h"
 #import "UITableView+SDAutoTableViewCellHeight.h"
 
+
 @implementation TestCell
 
 - (void)load:(NSString *)string{

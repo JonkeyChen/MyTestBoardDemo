@@ -484,6 +484,7 @@
 				7C8483241C4BC2470083A07D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C8483251C4BC2470083A07D /* Build configuration list for PBXNativeTarget "SwiftTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +493,7 @@
 				7C8483271C4BC2470083A07D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7C8483281C4BC2470083A07D /* Build configuration list for PBXNativeTarget "SwiftTableViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +502,7 @@
 				7C84832A1C4BC2470083A07D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

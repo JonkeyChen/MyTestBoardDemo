@@ -6,7 +6,8 @@
 //  Copyright (c) 2015年 oneyd.me. All rights reserved.
 //
 
-#import "TJLabel.h"
+
+#import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, LineType) {
     LineTypeNone,//没有画线
@@ -16,7 +17,7 @@ typedef NS_ENUM(NSInteger, LineType) {
 };
 
 
-@interface TJLabel_Line : TJLabel
+@interface TJLabel_Line : UILabel
 
 @property (assign, nonatomic) LineType lineType;
 @property (assign, nonatomic) UIColor * lineColor;
