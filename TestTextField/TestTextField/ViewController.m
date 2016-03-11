@@ -24,6 +24,8 @@ NSString *const cellIndentifier = @"IndentifierViewController";
     [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellIndentifier];
     [self.view addSubview:tableView];
 }
+- (IBAction)actionsheet1:(id)sender {
+}
 - (void)initBaseDataInfo{
     NSString *demoVCString = [NSString stringWithFormat:@"DemoVC1"];
     UIViewController *demoVC = [NSClassFromString(demoVCString) new];

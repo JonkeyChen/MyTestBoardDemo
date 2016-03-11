@@ -20,6 +20,8 @@
 @implementation ViewController
 - (IBAction)ddd:(id)sender forEvent:(UIEvent *)event {
 }
+- (IBAction)actionsheet1:(id)sender {
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];

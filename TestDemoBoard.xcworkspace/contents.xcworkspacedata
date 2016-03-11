@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:XSportLight_Test/XSportLight_Test.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:XAlertView_Test/XAlertView_Test.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CoreData_FMDataBase/CoreData_FMDataBase.xcodeproj">
    </FileRef>
    <FileRef
