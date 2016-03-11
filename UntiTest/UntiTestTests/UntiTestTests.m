@@ -30,14 +30,14 @@
 
 @implementation UntiTestTests
 
-- (void)setUp {
+- (void)setUp {//每个test方法执行前调用
     [super setUp];
 }
 
-- (void)tearDown {
+- (void)tearDown {//每个test方法执行后调用
     [super tearDown];
 }
-
+//命名为XXX的测试方法
 - (void)testExample {
 }
 
@@ -70,7 +70,6 @@
         XCTAssertNil(error, @"请求出错");
         NOTIFY //继续执行
     }];
-    WAIT  //暂停
 }
 -(void)testAlertViewCancel{
     NSLog(@"取消");
