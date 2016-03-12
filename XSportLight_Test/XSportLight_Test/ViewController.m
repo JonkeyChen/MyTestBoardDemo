@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
--(void)viewDidAppear:(BOOL)animated{    
+-(void)viewDidAppear:(BOOL)animated{
     XSportLight *SportLight = [[XSportLight alloc]init];
     SportLight.messageArray = @[
                                 @"这是《简书》",
@@ -40,6 +40,8 @@
     [self presentViewController:SportLight animated:false completion:^{
         
     }];
+    
+    //instantiateViewControllerWithIdentifier
 }
 -(void)XSportLightClicked:(NSInteger)index{
     NSLog(@"%ld",(long)index);
