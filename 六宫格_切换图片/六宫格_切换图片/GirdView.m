@@ -74,7 +74,7 @@
         UIButton *etbtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [etbtn setTitle:@"x" forState:UIControlStateNormal];
         [etbtn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
-        [etbtn.titleLabel setFont:[UIFont systemFontOfSize:12]];
+        [etbtn.titleLabel setFont:[UIFont systemFontOfSize:14]];
         [self addSubview:etbtn];
         
         if (obj == [arrSubImages lastObject]) {
@@ -84,9 +84,9 @@
             etbtn.tag = 100;
             [etbtn addTarget:self action:@selector(_efOnClickAdd:withEvent:) forControlEvents:UIControlEventTouchUpInside];
         } else {//图片
-            etbtn.frame = CGRectMake(origin_X+_width-15, origin_Y, 15, 15);
+            etbtn.frame = CGRectMake(origin_X+_width-25, origin_Y, 25, 25);
             etbtn.tag = idx;
-            [etbtn addTarget:self action:@selector(_efOnClickDelete:) forControlEvents:UIControlEventTouchUpInside];
+            [etbtn addTarget:self action:@selector(_efOnClickDelete:withEvent:) forControlEvents:UIControlEventTouchUpInside];
             
             [_arrRects addObject:[NSValue valueWithCGRect:etimag.frame]];
         }
@@ -102,7 +102,6 @@
         CGRect rect = [_arrRects[i] CGRectValue];
         if (CGRectContainsPoint(rect, point)) {
             _startPressIndex = i;
-            NSLog(@"开始标:%@",@(_startPressIndex));
         }
     }
 }
@@ -122,30 +121,6 @@
         if (!isChange) {
             return;
         }
-        NSLog(@"touchesEnded/结束:%@",@(_endPressIndex));
-        _isStartSwithImage = NO;
-        if ([self.delegate respondsToSelector:@selector(GirdView:exChangeAtIndex:toIndex:)]) {
-            [self.delegate GirdView:self exChangeAtIndex:_startPressIndex toIndex:_endPressIndex];
-        }
-    }
-}
-- (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    if (_isStartSwithImage) {
-        UITouch *touch = [[touches allObjects] lastObject];
-        CGPoint point = [touch locationInView:self];
-        
-        BOOL isChange = NO;
-        for (int i = 0; i<_arrRects.count; i++) {
-            CGRect rect = [_arrRects[i] CGRectValue];
-            if (CGRectContainsPoint(rect, point)) {
-                _endPressIndex = i;
-                isChange = YES;
-            }
-        }
-        if (!isChange) {
-            return;
-        }
-        NSLog(@"touchesCancelled/结束:%@",@(_startPressIndex));
         _isStartSwithImage = NO;
         if ([self.delegate respondsToSelector:@selector(GirdView:exChangeAtIndex:toIndex:)]) {
             [self.delegate GirdView:self exChangeAtIndex:_startPressIndex toIndex:_endPressIndex];
@@ -153,14 +128,23 @@
     }
 }
 
+
 //ClickAction
 - (void)_efOnClickAdd:(UIButton*)sender withEvent:(UIEvent*)event{
+    UITouch *touch = [[event allTouches]anyObject];
+    if (touch.tapCount >1) {
+        return;
+    }
     if ([self.delegate respondsToSelector:@selector(GirdView:didAddImages:)]) {
         [self.delegate GirdView:self didAddImages:event];
     }
     
 }
-- (void)_efOnClickDelete:(UIButton*)sender{
+- (void)_efOnClickDelete:(UIButton*)sender withEvent:(UIEvent*)event{
+    UITouch *touch = [[event allTouches]anyObject];
+    if (touch.tapCount >1) {
+        return;
+    }
     if ([self.delegate respondsToSelector:@selector(GirdView:didDeleteIndex:)]) {
         [self.delegate GirdView:self didDeleteIndex:sender.tag];
     }

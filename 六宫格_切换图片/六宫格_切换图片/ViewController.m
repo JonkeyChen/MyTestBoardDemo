@@ -40,10 +40,10 @@
                                                        [UIImage imageNamed:@"1.png"],
                                                        [UIImage imageNamed:@"1.png"]]];
     
-    arrImage5 = [[NSMutableArray alloc]initWithArray:@[[UIImage imageNamed:@"1.png"],
-                                                       [UIImage imageNamed:@"1.png"],
-                                                       [UIImage imageNamed:@"1.png"],
-                                                       [UIImage imageNamed:@"1.png"],
+    arrImage5 = [[NSMutableArray alloc]initWithArray:@[[UIImage imageNamed:@"5.png"],
+                                                       [UIImage imageNamed:@"4.png"],
+                                                       [UIImage imageNamed:@"3.png"],
+                                                       [UIImage imageNamed:@"5.png"],
                                                        [UIImage imageNamed:@"1.png"]]];
     
     arrImage6 = [[NSMutableArray alloc]initWithArray:@[[UIImage imageNamed:@"1.png"],
@@ -54,7 +54,7 @@
                                                        [UIImage imageNamed:@"6.png"]]];
     
     
-    evGirdView = [[GirdView alloc]initGirdFrame:CGRectMake(10, 100, 150+40, 150+40) withItemSize:CGSizeMake(50, 50)];
+    evGirdView = [[GirdView alloc]initGirdFrame:CGRectMake(10, 100, 300+40, 300+40) withItemSize:CGSizeMake(100, 100)];
     evGirdView.images = @[];
     //girdView.images = arrImage1;
     evGirdView.images = arrImage2;
@@ -72,6 +72,7 @@
 }
 - (void)GirdView:(GirdView *)gridView didAddImages:(UIEvent *)event{
     NSLog(@"添加图片");
+    gridView.images = arrImage6;
 }
 - (void)GirdView:(GirdView *)gridView exChangeAtIndex:(NSInteger)fromIndex toIndex:(NSInteger)toIndex{
     NSLog(@"from index (%@) to index (%@)",@(fromIndex),@(toIndex));
