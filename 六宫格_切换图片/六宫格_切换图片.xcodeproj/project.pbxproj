@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C68EE951C950B7B00251B25 /* GirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C68EE931C950B7B00251B25 /* GirdView.m */; };
+		7C68EE961C950B7B00251B25 /* iconMyAddPicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C68EE941C950B7B00251B25 /* iconMyAddPicture.png */; };
 		7CAD2E5B1C9451C10091AB00 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD2E5A1C9451C10091AB00 /* main.m */; };
 		7CAD2E5E1C9451C10091AB00 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD2E5D1C9451C10091AB00 /* AppDelegate.m */; };
 		7CAD2E611C9451C10091AB00 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD2E601C9451C10091AB00 /* ViewController.m */; };
@@ -15,8 +17,6 @@
 		7CAD2E691C9451C10091AB00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CAD2E671C9451C10091AB00 /* LaunchScreen.storyboard */; };
 		7CAD2E741C9451C10091AB00 /* ________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD2E731C9451C10091AB00 /* ________Tests.m */; };
 		7CAD2E7F1C9451C10091AB00 /* ________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD2E7E1C9451C10091AB00 /* ________UITests.m */; };
-		7CAD2E8E1C94521E0091AB00 /* GirdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CAD2E8D1C94521E0091AB00 /* GirdView.m */; };
-		7CAD2E901C9453EF0091AB00 /* iconMyAddPicture.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAD2E8F1C9453EF0091AB00 /* iconMyAddPicture.png */; };
 		7CAD2E921C9454030091AB00 /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAD2E911C9454030091AB00 /* 6.png */; };
 		7CAD2E981C947F3A0091AB00 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAD2E931C947F3A0091AB00 /* 1.png */; };
 		7CAD2E991C947F3A0091AB00 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CAD2E941C947F3A0091AB00 /* 2.png */; };
@@ -43,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C68EE921C950B7B00251B25 /* GirdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GirdView.h; sourceTree = "<group>"; };
+		7C68EE931C950B7B00251B25 /* GirdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GirdView.m; sourceTree = "<group>"; };
+		7C68EE941C950B7B00251B25 /* iconMyAddPicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMyAddPicture.png; sourceTree = "<group>"; };
 		7CAD2E561C9451C10091AB00 /* 六宫格_切换图片.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "六宫格_切换图片.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CAD2E5A1C9451C10091AB00 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CAD2E5C1C9451C10091AB00 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,9 +62,6 @@
 		7CAD2E7A1C9451C10091AB00 /* 六宫格_切换图片UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "六宫格_切换图片UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CAD2E7E1C9451C10091AB00 /* ________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "________UITests.m"; sourceTree = "<group>"; };
 		7CAD2E801C9451C10091AB00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CAD2E8C1C94521E0091AB00 /* GirdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GirdView.h; sourceTree = "<group>"; };
-		7CAD2E8D1C94521E0091AB00 /* GirdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GirdView.m; sourceTree = "<group>"; };
-		7CAD2E8F1C9453EF0091AB00 /* iconMyAddPicture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iconMyAddPicture.png; sourceTree = "<group>"; };
 		7CAD2E911C9454030091AB00 /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
 		7CAD2E931C947F3A0091AB00 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		7CAD2E941C947F3A0091AB00 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
@@ -95,6 +95,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C68EE911C950B7B00251B25 /* GirdView */ = {
+			isa = PBXGroup;
+			children = (
+				7C68EE921C950B7B00251B25 /* GirdView.h */,
+				7C68EE931C950B7B00251B25 /* GirdView.m */,
+				7C68EE941C950B7B00251B25 /* iconMyAddPicture.png */,
+			);
+			path = GirdView;
+			sourceTree = "<group>";
+		};
 		7CAD2E4D1C9451C10091AB00 = {
 			isa = PBXGroup;
 			children = (
@@ -118,13 +128,13 @@
 		7CAD2E581C9451C10091AB00 /* 六宫格_切换图片 */ = {
 			isa = PBXGroup;
 			children = (
+				7C68EE911C950B7B00251B25 /* GirdView */,
 				7CAD2E931C947F3A0091AB00 /* 1.png */,
 				7CAD2E941C947F3A0091AB00 /* 2.png */,
 				7CAD2E951C947F3A0091AB00 /* 3.png */,
 				7CAD2E961C947F3A0091AB00 /* 4.png */,
 				7CAD2E971C947F3A0091AB00 /* 5.png */,
 				7CAD2E911C9454030091AB00 /* 6.png */,
-				7CAD2E8F1C9453EF0091AB00 /* iconMyAddPicture.png */,
 				7CAD2E5C1C9451C10091AB00 /* AppDelegate.h */,
 				7CAD2E5D1C9451C10091AB00 /* AppDelegate.m */,
 				7CAD2E5F1C9451C10091AB00 /* ViewController.h */,
@@ -134,8 +144,6 @@
 				7CAD2E671C9451C10091AB00 /* LaunchScreen.storyboard */,
 				7CAD2E6A1C9451C10091AB00 /* Info.plist */,
 				7CAD2E591C9451C10091AB00 /* Supporting Files */,
-				7CAD2E8C1C94521E0091AB00 /* GirdView.h */,
-				7CAD2E8D1C94521E0091AB00 /* GirdView.m */,
 			);
 			path = "六宫格_切换图片";
 			sourceTree = "<group>";
@@ -276,9 +284,9 @@
 				7CAD2E991C947F3A0091AB00 /* 2.png in Resources */,
 				7CAD2E9A1C947F3A0091AB00 /* 3.png in Resources */,
 				7CAD2E661C9451C10091AB00 /* Assets.xcassets in Resources */,
+				7C68EE961C950B7B00251B25 /* iconMyAddPicture.png in Resources */,
 				7CAD2E981C947F3A0091AB00 /* 1.png in Resources */,
 				7CAD2E641C9451C10091AB00 /* Main.storyboard in Resources */,
-				7CAD2E901C9453EF0091AB00 /* iconMyAddPicture.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +313,7 @@
 			files = (
 				7CAD2E611C9451C10091AB00 /* ViewController.m in Sources */,
 				7CAD2E5E1C9451C10091AB00 /* AppDelegate.m in Sources */,
-				7CAD2E8E1C94521E0091AB00 /* GirdView.m in Sources */,
+				7C68EE951C950B7B00251B25 /* GirdView.m in Sources */,
 				7CAD2E5B1C9451C10091AB00 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,6 +540,7 @@
 				7CAD2E851C9451C10091AB00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CAD2E861C9451C10091AB00 /* Build configuration list for PBXNativeTarget "六宫格_切换图片Tests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +549,7 @@
 				7CAD2E881C9451C10091AB00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CAD2E891C9451C10091AB00 /* Build configuration list for PBXNativeTarget "六宫格_切换图片UITests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +558,7 @@
 				7CAD2E8B1C9451C10091AB00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
