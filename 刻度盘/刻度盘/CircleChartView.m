@@ -106,6 +106,7 @@
     _progressLayer.strokeEnd = percent;
     
     [self addPointWithPercent:percent];
+    [self setPercent:percent animated:YES];
 }
 
 -(void)setPercent:(CGFloat)percent animated:(BOOL)animated{
@@ -115,16 +116,12 @@
     [CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
     [CATransaction setAnimationDuration:1];
     _progressLayer.strokeEnd = percent/1.0;
-
     [CATransaction commit];
     
     [self addPointWithPercent:percent];
 }
 
 - (void)addPointWithPercent:(CGFloat)percent{
-    
-    //CGFloat cornR_ = self.radious+self.pathWidth*0.5;
-    //NSLog(@"%@",@(cornR_));
     if (percent == 0) {
         return;
     }
@@ -137,8 +134,8 @@
     UIBezierPath *cornerPath = [UIBezierPath bezierPathWithArcCenter:CGPointMake(point_x,self.frame.size.height- point_y) radius:cornerR startAngle:-M_PI endAngle:M_PI clockwise:YES];
     CAShapeLayer *backgroundLayer = [CAShapeLayer layer];
     backgroundLayer.path = cornerPath.CGPath;
-    backgroundLayer.strokeColor = [UIColor redColor].CGColor;
-    backgroundLayer.fillColor   = [UIColor redColor].CGColor;
+    backgroundLayer.strokeColor = [UIColor whiteColor].CGColor;
+    backgroundLayer.fillColor   = [UIColor whiteColor].CGColor;
     backgroundLayer.lineWidth = 1;
     [self.layer addSublayer:backgroundLayer];
 }

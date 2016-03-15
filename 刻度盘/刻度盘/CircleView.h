@@ -1,8 +1,8 @@
 //
 //  CircleView.h
-//  刻度盘
+//  YaoYD
 //
-//  Created by Tianjian on 16/3/14.
+//  Created by Tianjian on 16/3/15.
 //  Copyright © 2016年 oneyd.me. All rights reserved.
 //
 
@@ -10,6 +10,7 @@
 
 @interface CircleView : UIView
 
-@property (assign,nonatomic) CGFloat percent;
+/**角度值 0~1.0*/
+@property (assign,nonatomic) CGFloat percentPI;
 
 @end
