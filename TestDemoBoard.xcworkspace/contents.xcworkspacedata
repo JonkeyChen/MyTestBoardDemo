@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Cocoa_NSObject/Cocoa_NSObject.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIView+CAAimations/UIView+CAAimations.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIKit_WKWebView/UIKit_WKWebView.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UIView+Animations/UIView+Animations.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:&#x523b;&#x5ea6;&#x76d8;/&#x523b;&#x5ea6;&#x76d8;.xcodeproj">
    </FileRef>
    <FileRef

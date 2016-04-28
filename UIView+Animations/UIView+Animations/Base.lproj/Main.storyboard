@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vdv-C8-I3F">
+                                <rect key="frame" x="0.0" y="20" width="600" height="200"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="111.png" translatesAutoresizingMaskIntoConstraints="NO" id="uEi-PE-a9z">
+                                        <rect key="frame" x="1" y="10" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4mi-tR-0u1"/>
+                                            <constraint firstAttribute="width" constant="50" id="SLe-3Y-hUD"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="uEi-PE-a9z" firstAttribute="top" secondItem="Vdv-C8-I3F" secondAttribute="top" constant="10" id="4fJ-kk-fBz"/>
+                                    <constraint firstItem="uEi-PE-a9z" firstAttribute="leading" secondItem="Vdv-C8-I3F" secondAttribute="leading" constant="1" id="Lxh-Eo-skQ"/>
+                                    <constraint firstItem="uEi-PE-a9z" firstAttribute="centerY" secondItem="Vdv-C8-I3F" secondAttribute="centerY" id="Mhi-tB-K5r"/>
+                                    <constraint firstAttribute="width" secondItem="Vdv-C8-I3F" secondAttribute="height" multiplier="3:1" id="cbt-WY-3vK"/>
+                                    <constraint firstItem="uEi-PE-a9z" firstAttribute="centerX" secondItem="Vdv-C8-I3F" secondAttribute="centerX" id="dob-zw-m2s"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Mhi-tB-K5r"/>
+                                        <exclude reference="dob-zw-m2s"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3LH-sy-1hO">
+                                <rect key="frame" x="0.0" y="220" width="600" height="380"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Boz-E8-Vuh"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Zlo-5b-nz0"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3LH-sy-1hO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9sH-p8-64v"/>
+                            <constraint firstItem="Vdv-C8-I3F" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BL0-rV-7kW"/>
+                            <constraint firstAttribute="trailing" secondItem="3LH-sy-1hO" secondAttribute="trailing" id="J4u-UB-8QM"/>
+                            <constraint firstItem="3LH-sy-1hO" firstAttribute="top" secondItem="Vdv-C8-I3F" secondAttribute="bottom" id="aRk-lY-Gbr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3LH-sy-1hO" secondAttribute="bottom" id="hNH-nA-5hj"/>
+                            <constraint firstItem="Vdv-C8-I3F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tat-2T-36H"/>
+                            <constraint firstAttribute="trailing" secondItem="Vdv-C8-I3F" secondAttribute="trailing" id="wh3-cb-LKB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="evimg" destination="uEi-PE-a9z" id="Rbh-0c-Uul"/>
+                        <outlet property="evtblList" destination="3LH-sy-1hO" id="reW-la-BvC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="111.png" width="688" height="1144"/>
+    </resources>
+</document>

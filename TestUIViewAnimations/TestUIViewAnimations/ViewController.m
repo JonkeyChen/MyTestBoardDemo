@@ -23,6 +23,7 @@ NSString *const cellIndentifier = @"IndentifierViewController";
 
 #pragma mark -initMethod
 - (void)initXibProperty{
+    
     UITableView *tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
