@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:IB_DESIGNABLE/IB_DESIGNABLE.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Cocoa_SandBox_swift/Cocoa_SandBox_swift.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Cocoa_SandBox/Cocoa_SandBox.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:&#x5de5;&#x5382;&#x6a21;&#x5f0f;/&#x5de5;&#x5382;&#x6a21;&#x5f0f;.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Cocoa_NSObject/Cocoa_NSObject.xcodeproj">
    </FileRef>
    <FileRef

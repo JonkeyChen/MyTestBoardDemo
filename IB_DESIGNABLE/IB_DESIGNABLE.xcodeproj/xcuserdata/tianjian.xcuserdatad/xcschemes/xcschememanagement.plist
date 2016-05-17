@@ -4,25 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TestXibIncloudeScrollView.xcscheme</key>
+		<key>IB_DESIGNABLE.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>40</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7C8E3ECA1C22609200D6CDE1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7C8E3EE31C22609200D6CDE1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7C8E3EEE1C22609200D6CDE1</key>
+		<key>7CD583C91CEAB05300C16D3D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

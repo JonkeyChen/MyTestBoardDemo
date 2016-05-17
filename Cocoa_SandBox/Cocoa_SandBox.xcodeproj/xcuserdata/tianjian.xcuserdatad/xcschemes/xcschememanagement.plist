@@ -4,25 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TestXibIncloudeScrollView.xcscheme</key>
+		<key>Cocoa_SandBox.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>11</integer>
+			<integer>38</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7C8E3ECA1C22609200D6CDE1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7C8E3EE31C22609200D6CDE1</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>7C8E3EEE1C22609200D6CDE1</key>
+		<key>7C0324431CE31166008FCFCA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
