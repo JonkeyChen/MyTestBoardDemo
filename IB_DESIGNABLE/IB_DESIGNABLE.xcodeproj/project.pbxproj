@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C8FCABF1CEB1E4F0038B7A3 /* KeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FCABE1CEB1E4F0038B7A3 /* KeyBoard.m */; };
+		7C8FCAC11CEB1E5D0038B7A3 /* KeyBoard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8FCAC01CEB1E5D0038B7A3 /* KeyBoard.xib */; };
 		7CD583CF1CEAB05300C16D3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD583CE1CEAB05300C16D3D /* main.m */; };
 		7CD583D21CEAB05300C16D3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD583D11CEAB05300C16D3D /* AppDelegate.m */; };
 		7CD583D51CEAB05300C16D3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD583D41CEAB05300C16D3D /* ViewController.m */; };
@@ -19,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C8FCABD1CEB1E4F0038B7A3 /* KeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyBoard.h; sourceTree = "<group>"; };
+		7C8FCABE1CEB1E4F0038B7A3 /* KeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyBoard.m; sourceTree = "<group>"; };
+		7C8FCAC01CEB1E5D0038B7A3 /* KeyBoard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyBoard.xib; sourceTree = "<group>"; };
 		7CD583CA1CEAB05300C16D3D /* IB_DESIGNABLE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IB_DESIGNABLE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CD583CE1CEAB05300C16D3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CD583D01CEAB05300C16D3D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -77,6 +82,9 @@
 				7CD583DB1CEAB05300C16D3D /* LaunchScreen.storyboard */,
 				7CD583DE1CEAB05300C16D3D /* Info.plist */,
 				7CD583CD1CEAB05300C16D3D /* Supporting Files */,
+				7C8FCABD1CEB1E4F0038B7A3 /* KeyBoard.h */,
+				7C8FCABE1CEB1E4F0038B7A3 /* KeyBoard.m */,
+				7C8FCAC01CEB1E5D0038B7A3 /* KeyBoard.xib */,
 			);
 			path = IB_DESIGNABLE;
 			sourceTree = "<group>";
@@ -157,6 +165,7 @@
 			files = (
 				7CD583EA1CEAB27300C16D3D /* logo-1-40.png in Resources */,
 				7CD583DD1CEAB05300C16D3D /* LaunchScreen.storyboard in Resources */,
+				7C8FCAC11CEB1E5D0038B7A3 /* KeyBoard.xib in Resources */,
 				7CD583DA1CEAB05300C16D3D /* Assets.xcassets in Resources */,
 				7CD583E81CEAB11D00C16D3D /* 2.png in Resources */,
 				7CD583D81CEAB05300C16D3D /* Main.storyboard in Resources */,
@@ -174,6 +183,7 @@
 				7CD583F11CEAC9EE00C16D3D /* UIView+CornerRadius.m in Sources */,
 				7CD583D21CEAB05300C16D3D /* AppDelegate.m in Sources */,
 				7CD583CF1CEAB05300C16D3D /* main.m in Sources */,
+				7C8FCABF1CEB1E4F0038B7A3 /* KeyBoard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
